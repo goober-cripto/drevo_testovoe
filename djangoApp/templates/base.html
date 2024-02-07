@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Menu</title>
+    <!---<link rel="stylesheet" href="styles.css">--->
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}"/>
+</head>
+<body>
+
+<nav class="menu">
+    {% load menu_tag %}
+    {% draw_menu 'main_menu' %}
+</nav>
+
+</body>
+</html>
+
